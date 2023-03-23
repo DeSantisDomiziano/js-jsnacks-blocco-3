@@ -8,6 +8,6 @@ const array1 = ['pippo', 'PLUTO', 'Paperino']
 
 array1.forEach((char) => {
     //console.log(char);
-    const correct_char = char.toLowerCase().charAt(0).toUpperCase() + char.slice(1)
+    const correct_char = char.charAt(0).toUpperCase() + char.slice(1).toLowerCase()
     console.log(correct_char);
 })
