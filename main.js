@@ -51,7 +51,7 @@ const auto = [
     {
         marca: 'mercedes',
         modello: 'AMG GT',
-        alimentazione: 'benzina',
+        alimentazione: 'GPL',
     },
     {
         marca: 'mercedes',
@@ -74,9 +74,9 @@ const alimentazione_diesel = auto.filter((car) => {
 })
 console.log(alimentazione_diesel);
 
-const alimentazione_elettrica = auto.filter((car) => {
-    if (car.alimentazione == 'elettrica') {
+const alimentazione_green = auto.filter((car) => {
+    if (car.alimentazione !== 'benzina' && car.alimentazione !== 'diesel') {
         return true
     }
 })
-console.log(alimentazione_elettrica);
+console.log(alimentazione_green);
