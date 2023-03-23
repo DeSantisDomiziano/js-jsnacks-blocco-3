@@ -6,8 +6,10 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 
 const array1 = ['pippo', 'PLUTO', 'Paperino']
 
-array1.forEach((char) => {
+const new_array = array1.map((char) => {
     //console.log(char);
     const correct_char = char.charAt(0).toUpperCase() + char.slice(1).toLowerCase()
-    console.log(correct_char);
+    return correct_char
 })
+
+console.log(new_array);
